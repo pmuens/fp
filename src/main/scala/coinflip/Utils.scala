@@ -5,7 +5,7 @@ import scala.util.Random
 
 // NOTE: you'll find impure functions since we're dealing with IO
 
-object CoinFlipUtils {
+object Utils {
   def showPrompt(): Unit = println("(h)eads, (t)ails, (n)ew game or (q)uit: ")
 
   def getUserInput: String = readLine.trim.toUpperCase

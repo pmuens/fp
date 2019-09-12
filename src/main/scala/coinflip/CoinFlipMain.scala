@@ -1,13 +1,11 @@
 package coinflip
 
-import scala.util.Random
-import coinflip.CoinFlipUtils._
+import coinflip.Utils.{getUserInput, printGameOver, printGameState, printableFlipResult, showPrompt, tossCoin}
 
 import scala.annotation.tailrec
+import scala.util.Random
 
-case class GameState(numFlips: Int, numCorrect: Int)
-
-object CoinFlip extends App {
+object CoinFlipMain extends App {
   val initialGameState = GameState(0, 0)
   val random = Random
   mainLoop(initialGameState, random)
