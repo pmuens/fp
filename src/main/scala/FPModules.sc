@@ -22,3 +22,5 @@ object Podenco extends AnimalWithTail(Color.white) with DogTailServices with Dog
 
 Podenco.bark()
 Podenco.wagTail()
+
+// for a more sophisticated example see: https://github.com/alvinj/PizzaPosFpModularStyle

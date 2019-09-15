@@ -30,5 +30,4 @@ println(cart1.toString)
 println(cart2.toString)
 println(cart3.toString)
 
-
-
+// for a more sophisticated example see: https://github.com/alvinj/PizzaPosFpFunctionalObjectsStyle
