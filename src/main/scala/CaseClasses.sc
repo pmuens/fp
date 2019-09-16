@@ -26,3 +26,11 @@ val hannah3 = hannah2.copy(name = newName)
 // hannah got a new credit card
 val newCreditCard = hannah3.billingInfo.creditCards.head.copy(number = "2222222222", month = 4, year = 2021, cvv = "456")
 val hannah4 = hannah3.copy(billingInfo = BillingInfo(Seq(newCreditCard)))
+
+// --- using lenses ---
+import com.softwaremill.quicklens._
+
+val hannah5 = hannah1
+  .modify(_.name.lastName).setTo("Doe")
+  .modify(_.phone).setTo("1324-4657-6879")
+  .modify(_.email).setTo("hannah@doe.com")
